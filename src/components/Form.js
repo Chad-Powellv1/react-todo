@@ -2,27 +2,32 @@ import { useState, useEffect, useRef } from 'react';
 import React from 'react';
 import './form.css'
 
-export const Form = ({ onSubmit }) => {
-	const [input, setInput] = useState('');
+export const Form = ({ input, setInput, todos, setTodos }) => {
+	
+    const handleInputText = (e) => {
+        console.log(e.target.value)
+        setInput(e.target.value);
+    }
 
-    const handleSubmit = (e) => {
+    const handleInputSubmit = (e) => {
         e.preventDefault();
-        onSubmit({
-            id: Math.floor(Math.random() * 1492),
-            text: input
-        });
+        console.log(e.target.value);
+        setInput(e.target.value);
+        setTodos([
+            ...todos,
+             {
+                 text: input,
+                 completed: false,
+                 id: Math.floor(Math.random()*1000)
+            }
+        ]);
         setInput('');
     };
 
-    const handleChange = (e) => {
-        e.preventDefault();
-        setInput(e.target.value)
-    }
-
-
 	return (
-		<form className='form' onSubmit={handleSubmit}>
+        <>
 			<h2 className= 'title'>To-Do List</h2>
+            <form className='form'>
 			    <input
                     type='text'
                     id='myInput'
@@ -30,9 +35,10 @@ export const Form = ({ onSubmit }) => {
                     value={input}
                     name='text'
                     className='todo-input'
-                    onChange={handleChange}
+                    onChange={handleInputText}
 			    />
-                <button className='addBtn'>Add</button>
-		</form>
+                <button className='addBtn' onClick={handleInputSubmit}>Add</button>
+                </form>
+        </>
 	);
 };
