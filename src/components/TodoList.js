@@ -1,7 +1,7 @@
 import { Todo } from "./Todo";
+import React from 'react';
 
 export const TodoList = ({ todos }) => {
-
 
     return (
         <div className="todo-container">

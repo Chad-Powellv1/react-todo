@@ -5,7 +5,7 @@ export const Todo = ( {text} ) => {
 
     return (
         <div className="todo">
-            <li>{text}</li> 
+            <li className="clicked">{text}</li> 
         </div>
     )
 }
