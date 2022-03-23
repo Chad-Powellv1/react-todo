@@ -1,27 +1,29 @@
-import { useState, useEffect, useRef } from 'react';
 import React from 'react';
 import './form.css'
 
-export const Form = ({ input, setInput, todos, setTodos }) => {
+export const Form = ({ setInputText, setTodos,todos, inputText }) => {
 	
+
     const handleInputText = (e) => {
         console.log(e.target.value)
-        setInput(e.target.value);
+        setInputText(e.target.value)
     }
 
     const handleInputSubmit = (e) => {
         e.preventDefault();
         console.log(e.target.value);
-        setInput(e.target.value);
+        
         setTodos([
             ...todos,
              {
-                 text: input,
+                 text: inputText,
                  completed: false,
-                 id: Math.floor(Math.random()*1000)
-            }
+                 id: Date.now()
+            },
+            
         ]);
-        setInput('');
+        // set state back to empty input field
+        setInputText('');
     };
 
 	return (
@@ -32,8 +34,7 @@ export const Form = ({ input, setInput, todos, setTodos }) => {
                     type='text'
                     id='myInput'
                     placeholder='What do you need done?'
-                    value={input}
-                    name='text'
+                    value={inputText}
                     className='todo-input'
                     onChange={handleInputText}
 			    />
