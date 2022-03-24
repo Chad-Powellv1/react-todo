@@ -2,16 +2,24 @@
 	box-sizing: border-box;
 }
 
+
+.todo { 
+	display: flex;
+	justify-content: center;
+}
 ul {
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
+	margin-top: 2%;;
 }
 
 ul li {
+	width: 75%;
 	cursor: pointer;
-	position: relative;
 	padding: 12px 8px 12px 40px;
-	background: #eee;
+	background: rgb(223, 65, 65);
+
 	font-size: 18px;
 	transition: 0.2s;
 	-webkit-user-select: none;
@@ -21,7 +29,14 @@ ul li {
 }
 
 ul li:nth-child(odd) {
-	background: #f9f9f9;
+	background: #b32d2dcb;
+	text-align: center;
+	font-size: 48px;
+	color: white;
+	width: 75%;
+	margin:0 0 10px 0;
+
+
 }
 
 ul li:hover {
@@ -58,3 +73,4 @@ ul li.checked::before {
 	background-color: #f44336;
 	color: white;
 }
+
