@@ -1,6 +1,6 @@
-import { BiCheck, BiTrash } from 'react-icons/bi'
+import { BiCheck, BiTrash } from 'react-icons/bi';
 import React from "react";
-import './todo.css'
+import './todo.css';
 
 export const Todo = ( {text} ) => {
 
@@ -10,4 +10,4 @@ export const Todo = ( {text} ) => {
             <li className="clicked" style={{display: 'flex', justifyContent:'space-between'}} >{<BiCheck/>}{text}{<BiTrash />}</li> 
         </div>
     )
-}
+};

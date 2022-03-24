@@ -1,5 +1,7 @@
+
 import { BiCheck, BiTrash, BiPlusMedical } from 'react-icons/bi'
 import React from 'react';
+import { BiCheck, BiTrash, BiPlus } from 'react-icons/bi'
 import './form.css'
 
 export const Form = ({ setInputText, setTodos,todos, inputText }) => {
