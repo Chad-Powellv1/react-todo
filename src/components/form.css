@@ -4,9 +4,10 @@
 
 .title {
 	padding: 30px 40px;
-	color: rgb(0, 0, 0);
+	color: white;
 	text-align: center;
 	font-size: 4rem;
+
 }
 
 
@@ -14,6 +15,7 @@
 	content: '';
 	display: table;
 	clear: both;
+
 }
 
 .form {
@@ -25,13 +27,12 @@
 
 input {
 	margin: 0;
-	border: 2px solid rgb(53, 90, 212);
 	border-radius: 0;
 	width: 25%;
 	float: left;
     padding: 0.5rem;
     font-size: 2rem;
-
+	border: none;
 
 }
 
@@ -39,16 +40,14 @@ input {
 .addBtn {
     display: flex;
 	padding: 0.5rem;
-	width: 5%;
 	background: #ffffff;
-	color: rgb(0, 0, 0);
 	float: left;
 	text-align: center;
 	font-size: 2rem;
 	cursor: pointer;
 	transition: 0.3s;
 	border-radius: 0;
-    border: 2px solid rgb(53, 90, 212);
+	border: none;
 }
 
 .addBtn:hover {
