@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiCheck, BiTrash, BiPlus } from 'react-icons/bi'
 import './form.css'
 
 export const Form = ({ setInputText, setTodos,todos, inputText }) => {
@@ -38,7 +39,7 @@ export const Form = ({ setInputText, setTodos,todos, inputText }) => {
                     className='todo-input'
                     onChange={handleInputText}
 			    />
-                <button className='addBtn' onClick={handleInputSubmit}>Add</button>
+                <button className='addBtn' onClick={handleInputSubmit}><BiPlus /></button>
                 </form>
         </>
 	);

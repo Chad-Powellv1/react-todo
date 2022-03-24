@@ -39,9 +39,11 @@ input {
 
 .addBtn {
     display: flex;
-	padding: 0.5rem;
+	padding: 0.655rem;
 	background: #ffffff;
 	float: left;
+	color: rgba(3, 112, 3, 0.856);
+	font-weight: bold;
 	text-align: center;
 	font-size: 2rem;
 	cursor: pointer;
