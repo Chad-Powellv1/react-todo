@@ -7,6 +7,12 @@
 	display: flex;
 	justify-content: center;
 }
+
+.complete {
+	text-decoration: line-through;
+	opacity: 0.4;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
