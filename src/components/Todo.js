@@ -4,22 +4,21 @@ import '../App.css';
 
 export const Todo = ( {text, todos, setTodos, todo} ) => {
 
-   
-
-    const deleteHandler = (setTodos) => {
+    const deleteHandler = () => {
         setTodos(todos.filter(el => el.id !== todo.id));
     };
 
     const completeHandler = () => {
-        setTodos(todos.map((item) => {
+        setTodos(todos.map(item=> {
             if(item.id === todo.id) {
                 return {
-                    ...item, completed: !item.completed
+               ...item, completed: !item.completed
                 }
             }
             return item;
         }))
     };
+
 
    return (
         <div className={todo.completed ? 'todo complete' : 'todo'}>
