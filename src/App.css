@@ -14,7 +14,7 @@ body {
 .button {
     justify-content: center;
     align-items: center;
-    width: 20rem;
+    width: 30rem;
     height: 2rem;
     border-radius: 25px;
     color: white;
@@ -23,7 +23,5 @@ body {
 
 button:hover {
     background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
-	transition: 0.5s;
-	transition-delay: 0.5s;
-    border-radius: 25px;
+
 }
