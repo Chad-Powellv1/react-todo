@@ -1,5 +1,5 @@
 import React from "react";
-import { propTypes } from "react-bootstrap/esm/Image";
+
 
 export const Button = ( {color, text, onClick} ) => {
  
@@ -20,8 +20,3 @@ Button.defaultProps = {
 
 }
 
-Button.propTypes = {
-    text: propTypes.string,
-    color: propTypes.string,
-    onClick: propTypes.func,        
-}

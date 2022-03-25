@@ -1,7 +1,8 @@
 
 import { BiPlusMedical } from 'react-icons/bi'
 import React from 'react';
-import './form.css'
+import '../App.css'
+
 
 
 export const Form = ({ setInputText, setTodos,todos, inputText }) => {
@@ -29,19 +30,8 @@ export const Form = ({ setInputText, setTodos,todos, inputText }) => {
         setInputText('');
     };
 
-    const handleComplete = (id) => {
-        let updateTodo = todos.map(todo => {
-            if(todo.id === id) {
-                todo.isComplete = !todo.isComplete;
-            }
-            return todo;
-        });
-        setTodos(updateTodo)
-    }
+  
 
-    const handleDelete = (e) => {
-
-    }
 
 	return (
         <>
