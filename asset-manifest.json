@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/chad-powellv1.github.io/react-todo/static/css/main.f315bf97.css",
+    "main.js": "/chad-powellv1.github.io/react-todo/static/js/main.1a0b571a.js",
+    "static/media/blue-background.jpg": "/chad-powellv1.github.io/react-todo/static/media/blue-background.09d20b2ab8b6bf481af0.jpg",
+    "index.html": "/chad-powellv1.github.io/react-todo/index.html",
+    "main.f315bf97.css.map": "/chad-powellv1.github.io/react-todo/static/css/main.f315bf97.css.map",
+    "main.1a0b571a.js.map": "/chad-powellv1.github.io/react-todo/static/js/main.1a0b571a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f315bf97.css",
+    "static/js/main.1a0b571a.js"
+  ]
+}
